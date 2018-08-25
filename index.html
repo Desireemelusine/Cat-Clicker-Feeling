@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Paytone+One|Rock+Salt" rel="stylesheet">
+
+    <title>Cat_cliker</title>
+  </head>
+  <body>
+
+<!--como não sei quantos buttons serão criados no futuro, mais vale criar um UL com uma class e desse modo eu crio o li através no Js/view  -->
+  <div class="row">
+    <div class="col-6">
+      <h1>Welcome to Cat Cliker Feelings!</h1>
+      <h2>Are you having cat feelings? Which one? Click image to score</h2>
+      <ul id="catList"></ul>
+    </div>
+<!-- foi criado um ID pq está relacionado com o gato específico para render -->
+    <div id="cat" class="col-6">
+      <h3 id="catName"></h3>
+      <p id="catCount" class="score"></p>
+      <img id="catImage"  src="" alt="">
+      <p id="catText" class="ptext"></p>
+    </div>
+  </div>
+
+  <button id="admin" onclick="showForm();" class="font" >Click here for Premium Cat Clicker</button>
+		<div id="show-admin">
+			<form id="admin-mode" class="font">
+				Cat Name<input id="nName" type="text" name="fname" class="font"/>
+				URL<input id="nUrl" type="url" name="furl" class="font"/>
+        Cat Text<input id="nText" type="text" name="ftext" class="font"/>
+        Score<input id="nClick" type="number" name="fclick" class="font"/>
+			</form>
+			<button id="form-cancel" onclick="hideForm();" class="font">Cancel</button>
+			<button id="form-submit" class="font">Submit</button>
+		</div>
+
+<script type="text/javascript">
+
+document.getElementById('show-admin').style.visibility="hidden";
+
+function showForm(){
+  document.getElementById('show-admin').style.visibility="visible";
+  document.getElementById('form-submit').style.visibility="visible";
+}
+
+function hideForm(){
+  document.getElementById('show-admin').style.visibility="hidden";
+  document.getElementById('form-submit').style.visibility="hidden";
+}
+
+</script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
