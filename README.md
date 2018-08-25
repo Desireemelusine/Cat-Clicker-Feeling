@@ -1,11 +1,7 @@
 # Welcome to Cat Cliker Feelings!
 
 The project goal is to develop an app from zero, with MOV (Model-View-Controller).
-It was very challenging, but at the end I got surprised with the results,  the understandable code and knowing that it's the perfect way to build an app because it allow you to  upgrade the app, find possible bug and change without interfering the  rest o the code
-
-The project has two branches:
-* master: the standard code provided for the project.
-* Desireemelusine-optmization: the optimized code
+It was very challenging, but at the end I got surprised with the results,  the understandable code and knowing that it's the perfect way to build an app because it allows you to  upgrade the app, find possible bug and change without interfering the  rest of the code.
 
 ### What it was done:
 * HTML with 3 parts: list view, image view and premium (the user can change the photo and the info)
