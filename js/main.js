@@ -90,9 +90,8 @@ var model ={
      model.currentCat.imgSrc = dUrl.value;
      model.currentCat.clickCount = dClick.value;
      model.currentCat.text = dText.value;
-
      // ele atualiza o current.cat e manda o view. render renderiza... o próprio render pede devolta
-
+   },
 	};
 
 //---------------VIEW------------------//
